@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinacije u BiH</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Povezivanje sa CSS fajlom -->
+</head>
+ <style>
+    /* Osnovni stilovi za cijelu stranicu */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Kontejner za destinacije */
+.destinacije-container {
+  padding: 20px;
+}
+
+/* Grid za raspored destinacija */
+.destinacije-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolone */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Stilovi za svaku destinaciju */
+.destinacija-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.destinacija-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.destinacija-item h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.destinacija-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Za manje ekrane, 1 kolona */
+@media screen and (max-width: 768px) {
+  .destinacije-grid {
+    grid-template-columns: 1fr; /* 1 kolona na manjim ekranima */
+  }
+}
+
+ </style>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>20 Destinacija za Posjetiti u BiH</h1>
+  </header>
+
+  <!-- Glavni sadržaj -->
+  <section class="destinacije-container">
+    <div class="destinacije-grid">
+      <!-- Destinacija 1 -->
+      <div class="destinacija-item">
+        <h3>Sarajevo</h3>
+        <p>Sarajevo, glavni grad BiH, bogat historijom i kulturom. Poznato po Baščaršiji i autentičnoj bosanskoj kuhinji kuhinji.</p>
+        <img src="sarajevo.jpeg" alt="Mostar">
+    </div>
+
+      <!-- Destinacija 2 -->
+    <div class="destinacija-item">
+        <h3>Mostar</h3>
+        <p>Mostar je grad prepoznatljiv po Starom mostu, simbolu povezanosti. Njegove uske ulice odišu historijom i šarmom.</p>
+        <img src="mostar.jpg" alt="Mostar">
+      </div>
+
+      <!-- Destinacija 3 -->
+      <div class="destinacija-item">
+        <h3>Travnik</h3>
+        <p>Travnik je grad bogate historije i kulture Poznat je i po čuvenim travničkim ćevapima i Starom gradu.</p>
+        <img src="staritravnik.webp" alt="Mostar">
+    </div>
+
+      <!-- Destinacija 4 -->
+      <div class="destinacija-item">
+        <h3>Trebinje</h3>
+        <p>Trebinje je hercegovački grad uz rijeku Trebišnjicu. Oduševljava mirnom atmosferom i mediteranskim ugođajem.</p>
+        <img src="trebinje.jpg" alt="Mostar">
+    </div>
+
+      <!-- Destinacija 5 -->
+      <div class="destinacija-item">
+        <h3>Banja Luka</h3>
+        <p>Banja Luka je grad zelenila, rijeke Vrbas i bogatog kulturnog života. Poznata je po tvrđavi Kastel i ukusnoj banjalučkoj hrani.</p>
+        <img src="banja luka.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Bihać</h3>
+        <p>Bihać je grad na rijeci Uni, poznat po prirodnim ljepotama i vodopadima. Idealna destinacija za ljubitelje avanture i prirode.</p>
+        <img src="bihac.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Jajce</h3>
+        <p>Jajce je grad kraljeva, sa čuvenim vodopadom u centru grada.Ovdje se spajaju historija i prirodne ljepote.</p>
+        <img src="jajce.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Konjic</h3>
+        <p>Konjic je grad na obali Neretve, poznat po starom kamenom mostu. Okružen planinama, nudi savršenu oazu za odmor.</p>
+        <img src="konjic.JPG" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Prokoško jezero</h3>
+        <p>Prokoško jezero je planinski biser na Vranici. Okruženo je netaknutom prirodom i tradicionalnim kolibama.</p>
+        <img src="prokosko.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Boračko jezero</h3>
+        <p>Boračko jezero je smaragdni dragulj podno Prenja. Idealan je izbor za kampovanje i vodene aktivnosti.</p>
+        <img src="boracko jezero.jpeg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Ramsko jezero</h3>
+        <p>Ramsko jezero fascinira svojim ostrvima i plavetnilom. Njegovi pejzaži su raj za ljubitelje fotografije.</p>
+        <img src="ramsko jezero.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Jablaničko jezero</h3>
+        <p>Jablaničko jezero poznato je po svojoj površini i prelijepim zalascima sunca. Popularno je odredište za ribolov i odmor.</p>
+        <img src="jablanicko.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Vodopad Kravica</h3>
+        <p>Vodopadi Kravica su prirodni dragulj Hercegovine. Idealni su za osvježenje i opuštanje uz zvuke vode.</p>
+        <img src="kravica.jpeg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Vodopad Štrbački buk</h3>
+        <p>Štrbački buk je vodopad na rijeci Uni, smješten u Np Una. Oduševljava svojom snagom i netaknutom prirodom.</p>
+        <img src="strbacki buk.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Vodopad Skakavac</h3>
+        <p>Vodopad Skakavac, visok 98 metara, smješten je blizu Sarajeva. Omiljeno je izletište za ljubitelje prirode i planinarenja.</p>
+        <img src="skakavac.jpeg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Vodopad Bliha</h3>
+        <p>Vodopad Bliha blizu Sanskog Mosta visok je 56 metara. Njegova divlja ljepota oduševljava svakog posjetioca.</p>
+        <img src="bliha2.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Planina Vlašić</h3>
+        <p>Vlašić je poznat po čistom zraku i zimskim sportovima. Popularna je destinacija za odmor u svako doba godine.</p>
+        <img src="vlasic.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Planina Prenj</h3>
+        <p>Prenj, hercegovački Himalaji, oduševljava svojim impozantnim vrhovima. Raj je za iskusne planinare i ljubitelje divlje prirode.</p>
+        <img src="prenj.jpeg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Planina Maglić</h3>
+        <p>Maglić je najviša planina u Bosni i Hercegovini. Smještena u srcu Np Sutjeska, nudi spektakularne poglede.</p>
+        <img src="maglic.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Planina Treskavica</h3>
+        <p>Treskavica je poznata po brojnim jezerima i bogatoj flori. Njeni izazovni vrhovi privlače ljubitelje planinarenja.</p>
+        <img src="treskavica.jpeg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Stari grad Ostrožac</h3>
+        <p>Stari grad Ostrožac smješten je iznad rijeke Une. Njegovi zidovi pričaju priče o bogatoj historiji i kulturi ovog kraja.</p>
+        <img src="ostrozac.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Stari grad Počitelj</h3>
+        <p>Počitelj je gradić poznat po kamenim kućama i utvrdi. Njegova autentična arhitektura privlači posjetitelje iz cijelog svijeta.</p>
+        <img src="poctielj.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Stari grad Bobovac</h3>
+        <p>Bobovac je nekadašnja kraljevska rezidencija bosanskih vladara. Smješten na brdu, pruža fascinantan uvid u srednjovjekovnu historiju.</p>
+        <img src="bobovac.jpg" alt="Mostar">
+    </div>
+
+    <div class="destinacija-item">
+        <h3>Stari grad Tešanj</h3>
+        <p>Stari grad Tešanj jedna je od najvećih i najočuvanijih tvrđava. Njegova historija seže duboko u prošlost i odiše bogatim naslijeđem.</p>
+        <img src="tesanj.jpeg" alt="Mostar">
+    </div>
+
+
+    </div>
+  </section>
+
+</body>
+</html>
