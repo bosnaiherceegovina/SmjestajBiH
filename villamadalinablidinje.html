@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vila Madalina Blidinje</title>
-  <meta name="description" content="Vila Madalina Blidinje nudi savršen odmor u srcu prirode. Rezervišite smještaj i uživajte u miru i udobnosti!">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <style>
-    body {
+     body {
       font-family: 'Arial', sans-serif;
       background-color: white;
       margin: 0;
@@ -17,34 +16,59 @@
 
     .header {
       background-color: brown;
+      background-size: cover;
       color: white;
       text-align: center;
       padding: 100px 0;
     }
 
+    .header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .header p {
+      font-size: 1.2rem;
+    }
     .about-section {
       padding: 60px 0;
       background-color: #ffffff;
     }
 
-    .icon-box-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .icon-box {
-      flex: 1 1 200px;
-      max-width: 250px;
+    .about-text {
       text-align: center;
-      padding: 20px;
+      margin-bottom: 40px;
     }
 
-    .icon-box i {
+    .about-text h2 {
       font-size: 2rem;
-      color: brown;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
+
+    
+    .icon-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  width: 80%; 
+  text-align: center;
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: brown;
+  margin-bottom: 10px; 
+}
+
+
 
     .gallery-section {
       padding: 60px 0;
@@ -56,65 +80,110 @@
       height: auto;
       border-radius: 10px;
     }
+
+    .carousel {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .carousel-indicators li {
+      background-color: #4caf50;
+    }
   </style>
 </head>
 <body>
+
+  
   <div class="header">
     <h1>Vila Madalina Blidinje</h1>
     <p>Savršen odmor u srcu prirode</p>
   </div>
 
+  
   <div class="about-section">
     <div class="container">
-      <div class="about-text text-center">
+      <div class="about-text">
         <h2>O Vili</h2>
-        <p>Smještaj od 75 m² nudi udoban boravak s kuhinjom, dnevnim boravkom i fleksibilnim rasporedom kreveta za do 9 osoba. Udaljenost do trgovina, restorana i atrakcija poput jezera Blidinje i skijališta čini ovu lokaciju idealnom za miran odmor ili aktivni bijeg.</p>
-        <p>Rezervisati možete na broj +49 170 404 9934 ili putem društvenih mreža.</p>
+        <p>Smještaj od 75 m² nudi udoban boravak s kuhinjom, dnevnim boravkom i fleksibilnim rasporedom kreveta za do 9 osoba.
+            Udaljenost do trgovina, restorana i atrakcija poput jezera Blidinje i skijališta čini ovu lokaciju idealnom za miran odmor ili aktivni bijeg.
+            Smještaj uključuje besplatan parking, a check-in i check-out su fleksibilni za veću udobnost gostiju.
+            Opremu čini kuhinja s potrebnim uređajima, uključujući pećnicu, perilicu i mikrovalnu, te dodatni madraci na napuhavanje za veće grupe.
+            Lokacija smještaja omogućava lako istraživanje prirodnih ljepota i uživanje u mirnoj atmosferi, uz brzi pristup osnovnim uslugama.
+        </p>
+        <p><p>Rezervisati možete na broj +49 170 404 9934 ili putem društevnih mreža.</p>
+        
       </div>
-      <div class="row icon-box-container">
-        <div class="icon-box">
-          <i class="fas fa-bed"></i>
-          <h4>Spavaća soba</h4>
-          <p>Spavaća soba ima bračni krevet za dvoje te potkrovlje sa krevetima.</p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="icon-box">
+            <i class="fas fa-bed"></i>
+            <h4>Spavaća soba</h4>
+            <p>Spavaća soba u ima bračni krevet za dvoje te potkrovlje sa krevetima.</p>
+          </div>
         </div>
-        <div class="icon-box">
-          <i class="fas fa-bath"></i>
-          <h4>Kupatilo</h4>
-          <p>Elegantan i moderan dizajn kupatila.</p>
+        <div class="col-md-3">
+          <div class="icon-box">
+            <i class="fas fa-bath"></i>
+            <h4>Kupatilo</h4>
+            <p>Elegantan i moderan dizajn kupatila.</p>
+          </div>
         </div>
-        <div class="icon-box">
-          <i class="fas fa-utensils"></i>
-          <h4>Kuhinja</h4>
-          <p>Kuhinja je opremljena pećnicom, perilicom, mikrovalnom i hladnjakom.</p>
+        <div class="col-md-3">
+          <div class="icon-box">
+            <i class="fas fa-utensils"></i>
+            <h4>Kuhinja</h4>
+            <p>Kuhinja je opremljena pećnicom, perilicom, mikrovalnom i hladnjakom.</p>
+          </div>
         </div>
-        <div class="icon-box">
-          <i class="fas fa-couch"></i>
-          <h4>Dnevni Boravak</h4>
-          <p>Prostran dnevni boravak s udobnim namještajem.</p>
+        <div class="col-md-3">
+          <div class="icon-box">
+            <i class="fas fa-couch"></i>
+            <h4>Dnevni Boravak</h4>
+            <p>Prostran dnevni boravak s udobnim namještajem.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+ 
   <div class="gallery-section">
     <div class="container">
-      <h2 class="text-center text-white mb-4">Galerija</h2>
+      <h2 class="text-center" style="color: white; margin-bottom: 20px;">Galerija</h2>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
-        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="vila madalina blidinje 1.jpg" class="d-block w-100" alt="Vila 1">
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 1.jpg" class="d-block w-100" alt="Vila 2">
           </div>
           <div class="carousel-item">
-            <img src="vila madalina blidinje 2.jpg" class="d-block w-100" alt="Vila 2">
+            <img src="vila madalina blidinje 2.jpg" class="d-block w-100" alt="Vila 3">
           </div>
           <div class="carousel-item">
             <img src="vila madalina blidinje 3.jpg" class="d-block w-100" alt="Vila 3">
           </div>
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 5.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 6.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 7.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 8.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 12.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 13.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="vila madalina blidinje 14.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+        </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
