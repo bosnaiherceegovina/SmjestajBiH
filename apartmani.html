@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartmani za odmor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background-color: brown;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: white;
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        
+
+    
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .room-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .room {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            max-width: 280px; 
+            margin: right; 
+        }
+
+        .room:hover {
+            transform: scale(1.05);
+        }
+
+        .room img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .room h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #222;
+            
+        }
+
+        .room p {
+            font-size: 14px;
+            color: #222;
+            
+        }
+
+        .room a {
+           text-decoration: none;
+           color: inherit;
+}
+
+
+        @media (max-width: 768px) {
+            .room-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .room-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Apartmani za Odmor</h1>
+    </div>
+
+    <section class="rooms">
+        <div class="container">
+            
+
+            <div class="room-grid">
+                <div class="room">
+                    <a href="apartmanimatovic.html">
+                        
+                        <img src="apartmani matovic 2.jpg" alt="apartmanimatovic">
+                        <h3 style="text-align: left;">Apartmani Matović</h3>
+                        <p style="text-align: left;">Moderno opremljeni apartmani u centru Bijeljine sa svim pogodnostima.</p>
+                    </a>
+                </div>
+            
+            <div class="room-grid">
+                <div class="room">
+                    <a href="apartmanmek1.html">
+                        
+                        <img src="" alt="apartmanmek1">
+                        <h3 style="text-align: left;">Apartman Mek I</h3>
+                        <p style="text-align: left;">Moderan apartman na Bjelašnici pruža udobnost, toplinu i predivan pogled na planinsko okruženje.</p>
+                    </a>
+                </div>
+
+                <div class="room">
+                    <a href="apartmanmek2.html">
+                        
+                        <img src="" alt="apartmanmek2">
+                        <h3 style="text-align: left;">Apartman Mek II</h3>
+                        <p style="text-align: left;">Apartman Mek II je savršen izbor za opuštanje i stvaranje uspomena s porodicom ili prijateljima.</p>
+                    </a>
+                </div>
+
+                
+
+                
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
