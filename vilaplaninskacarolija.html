@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Planinska Čarolija</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: brown;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .header p {
+      font-size: 1.2rem;
+    }
+    .about-section {
+      padding: 60px 0;
+      background-color: #ffffff;
+    }
+
+    .about-text {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    
+    .icon-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  width: 80%; 
+  text-align: center;
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: brown;
+  margin-bottom: 10px; 
+}
+
+
+
+    .gallery-section {
+      padding: 60px 0;
+      background-color: brown;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .carousel {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .carousel-indicators li {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="header">
+    <h1>Villa Planinska Čarolija</h1>
+    <p>Udoban smještaj na Vlašiću, okružen prirodom i savršen za opuštanje.</p>
+  </div>
+
+  
+  <div class="about-section">
+    <div class="container">
+      <div class="about-text">
+        <h2>O Vili</h2>
+        <p>Ako tražite savršeno mjesto za bijeg od svakodnevice, naša villa na Vlašiću pruža idealan spoj udobnosti i prirodne ljepote. Smještena u srcu planine, nudi moderno opremljene apartmane prilagođene različitim potrebama – bilo da dolazite u paru, s porodicom ili većim društvom. Svaki apartman osigurava potpunu privatnost i toplinu doma, dok vam blizina skijališta, restorana i trgovina omogućava bezbrižan boravak. Bez obzira na vremenske prilike, pristup je uvijek osiguran, a uz dogovor možete uživati i u posebnom planinskom ambijentu naše sadrvanske oaze. Vlašić vas čeka s netaknutom prirodom, svježim zrakom i opuštajućim okruženjem. 
+        </p>
+        <p>Rezervisati možete na broj +387 61 744 515 ili putem društvenih mreža.</p>        
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-home"></i>
+                <h4>Moderni apartmani</h4>
+                <p>Zasebni i potpuno opremljeni apartmani za udoban boravak.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-car"></i>
+                <h4>Siguran pristup</h4>
+                <p>Dolazak moguć u svim vremenskim uslovima.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Odlična lokacija</h4>
+                <p>Blizina skijališta, restorana, trgovina i prirodnih ljepota.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-tree"></i>
+                <h4>Šadrvanska oaza</h4>
+                <p>Poseban kutak za opuštanje u prirodnom ambijentu.</p>
+            </div>
+        </div>
+            
+          
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="gallery-section">
+    <div class="container">
+      <h2 class="text-center" style="color: white; margin-bottom: 20px;">Galerija</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="planinskacarolija2.jpg" class="d-block w-100" alt="Vila 1">
+          </div>
+          <div class="carousel-item">
+            <img src="planinskacarolija4.jpg" class="d-block w-100" alt="Vila 2">
+          </div>
+          <div class="carousel-item">
+            <img src="planinskacarolija5.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="planinskacarolija6.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+          <div class="carousel-item">
+            <img src="planinskacarolija3.jpg" class="d-block w-100" alt="Vila 3">
+          </div>
+        
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
