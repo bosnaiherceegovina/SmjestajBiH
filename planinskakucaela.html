@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Homes Piralo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: brown;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .header p {
+      font-size: 1.2rem;
+    }
+    .about-section {
+      padding: 60px 0;
+      background-color: #ffffff;
+    }
+
+    .about-text {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    
+    .icon-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  width: 80%; 
+  text-align: center;
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: brown;
+  margin-bottom: 10px; 
+}
+
+
+
+    .gallery-section {
+      padding: 60px 0;
+      background-color: brown;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .carousel {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .carousel-indicators li {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="header">
+    <h1>Planinska Kuća Ella</h1>
+    <p>Planinska kuća Ella pruža toplinu i udobnost usred netaknute prirode.</p>
+  </div>
+
+  
+  <div class="about-section">
+    <div class="container">
+      <div class="about-text">
+        <h2>O Vikendici</h2>
+        <p>Planinska kuća Ella smještena je u Gornjim Čevljanovićima, na mirnoj lokaciji okruženoj prirodom, udaljena 35 kilometara od Sarajeva i samo desetak kilometara od Bijambarskih pećina. Ova topla i udobna vikendica pruža savršen bijeg od gradske vreve, s kapacitetom do sedam osoba.
+
+            Enterijer spaja rustikalni šarm s modernim komforom – prostrana spavaća soba s galerijom stvara poseban ugođaj, dok kuhinja i dnevni boravak nude sve potrebno za ugodan boravak. Unutra se nalazi i mala biblioteka, idealna za trenutke opuštanja uz knjigu. Zimi se jacuzzi smješta u zatvoreni prostor, omogućavajući uživanje u toplini dok vani vlada planinska idila.
+            
+            Eksterijer je jednako privlačan, s prostranom terasom i velikim dvorištem koje poziva na druženje i opuštanje. Vanjski roštilj i tradicionalni seoski sjenik upotpunjuju atmosferu, dok privatni parking osigurava dodatnu praktičnost. U neposrednoj blizini nalazi se Nišićka visoravan, pružajući obilje mogućnosti za istraživanje prirodnih ljepota. 
+        </p>
+        <p>Rezervisati možete na broj +387 60 33 57 578 ili putem društvenih mreža.</p>        
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-mountain"></i>
+                <h4>Planinski ambijent</h4>
+                <p>Uživajte u tišini i svježem zraku netaknute prirode.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-hot-tub"></i>
+                <h4>Jacuzzi</h4>
+                <p>Potpuni relax uz toplu vodu, idealno za svako godišnje doba.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-book"></i>
+                <h4>Mala biblioteka</h4>
+                <p>Opustite se uz dobru knjigu u toplom planinskom okruženju.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="icon-box">
+                <i class="fas fa-fire"></i>
+                <h4>Vanjski roštilj i sadrvan</h4>
+                <p>Uživajte u druženju uz roštilj i tradicionalni planinski ambijent.</p>
+            </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="gallery-section">
+    <div class="container">
+      <h2 class="text-center" style="color: white; margin-bottom: 20px;">Galerija</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="planinskakucaela3.jpeg" class="d-block w-100" alt="">
+          </div>
+          
+          <div class="carousel-item active">
+            <img src="planinskakucaela4.jpeg" class="d-block w-100" alt="">
+          </div>
+          
+          <div class="carousel-item active">
+            <img src="planinskakucaela5.jpeg" class="d-block w-100" alt="">
+          </div>
+          
+          <div class="carousel-item active">
+            <img src="planinskakucaela7.jpeg" class="d-block w-100" alt="">
+          </div>  
+          
+          <div class="carousel-item active">
+            <img src="planinskakucaela8.jpeg" class="d-block w-100" alt="">
+          </div>
+
+          <div class="carousel-item active">
+            <img src="planinskakucaela9.jpeg" class="d-block w-100" alt="">
+          </div>
+
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
